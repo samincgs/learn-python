@@ -15,3 +15,5 @@ print(default_slicing)
 # start from 8 and go to 2, pick every second element
 exercise_list = test_list[7: 0: -2]
 print(exercise_list)
+
+print('hi')
