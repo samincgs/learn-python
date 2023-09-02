@@ -21,3 +21,10 @@ inventory_names = [
 inventory_numbers = [43, 12, 95, 421, 23, 43]
 
 combined_list = zip(inventory_names, inventory_numbers)
+
+# # sort this list by inventory numbers
+print(sorted(combined_list, key=lambda item: item[1]))
+
+
+# sort the list by length of the inventory name
+print(sorted(combined_list, key=lambda item: len(item[0])))
