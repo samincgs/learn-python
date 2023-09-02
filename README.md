@@ -1,0 +1,7 @@
+#### LEARNING PYTHON
+
+I'm diving deep into Python's core concepts, libraries, and frameworks. From variables and loops to advanced topics like OOP and decorators.
+The goal is to learn to use Python efficiently and fluently. With the fundamentals, it will help me become better at game development (pygame)
+and also get more comfortable with data science, and machine learning (numpy, pandas, matplotlib.
+
+Following a tutorial made by Clear Code:)
