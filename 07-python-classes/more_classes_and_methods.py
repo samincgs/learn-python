@@ -41,7 +41,7 @@ class Attacks:
 
 
 attacks = Attacks()
-monster = Monster(attacks.bite)
+monster = Monster(func=attacks.bite)
 print(dir(monster))
 
 monster.func()
