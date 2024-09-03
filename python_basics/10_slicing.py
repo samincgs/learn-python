@@ -9,7 +9,7 @@ print (my_list[-10])
 print(my_list[3:-2])
 
 # the whole list
-print(my_list[1:]) # 0- 9
+print(my_list[1:]) # 1- 9
 
 print(my_list[:-1]) # 0 - 8
 
