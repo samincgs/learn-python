@@ -6,13 +6,17 @@
     is invoked outside of their scope.
 '''
 
-def outer_function():
-    message = 'Hi'
+def outer_func(msg):
+    message = msg
     
-    def inner_function():
-        print(message)
-        
-    return inner_function()
+    def inner_func():
+        print(message) 
+    return inner_func
 
+hi_func = outer_func('hi')
+hello_func = outer_func('hello')
 
-outer_function()
+# print(my_func)
+
+hi_func()
+hello_func()
