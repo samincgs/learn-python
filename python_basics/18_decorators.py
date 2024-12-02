@@ -32,6 +32,16 @@ def decorator_function(orig_func):
         return orig_func(*args, **kwargs)
     return wrapper_function
 
+# class version of the decorator function
+class DecoratorClass:
+    def __init__(self, orig_func):
+        self.orig_func = orig_func
+        
+    def __call__(self, *args, **kwargs):
+        print(f'call method executed this before {self.orig_func.__name__}')
+        return self.orig_func(*args, **kwargs)
+
+
 @decorator_function
 def display():
     print('display function ran')
@@ -39,10 +49,17 @@ def display():
 @decorator_function
 def display_info(name, age):
     print(f'display function ran with arguments {name} and {age}')
+
+def display():
+    print('display function ran')
+
+@DecoratorClass
+def display_info(name, age):
+    print(f'display function ran with arguments {name} and {age}')
     
 # same as 
-func = decorator_function(display)
+# func = decorator_function(display)
     
-display()
+# display()
 
 display_info('sam', 22)
